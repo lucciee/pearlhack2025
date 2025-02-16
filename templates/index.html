@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pearl hack</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-color: #f9f9f9;">
+
+    <!-- Header -->
+    <header class="text-black p-4 flex items-center justify-between"
+        style="background-color: #f9f9f9; font-weight: bolder;">
+        <div class="text-2xl">Fuse</div>
+    </header>
+
+
+
+    <!-- Main Layout -->
+    <div>
+
+
+
+        <div class="tab">
+            <!-- <button class="tablinks active" onclick="openTab(event, 'Home')">Home</button> -->
+            <button class="tablinks active" onclick="openTab(event, 'Classes')">Classes</button>
+            <button class="tablinks" onclick="openTab(event, 'Events')">Events</button>
+            <button class="tablinks" onclick="openTab(event, 'Leaderboard')">Leaderboard</button>
+        </div>
+
+        <!-- <div id="Home" class="tabcontent" style="display: block;">
+            <h3>Home</h3>
+            <p>Home is the capital city of England.</p>
+          </div> -->
+
+
+
+        <div id="Classes" class="tabcontent" style="display: block;">
+            <h3>Classes</h3>
+            <p></p>
+
+            <table id="courses-container">
+
+            </table>
+        </div>
+
+        <div id="Events" class="tabcontent">
+            <h3>Events</h3>
+            <p></p>
+
+            <table id="events-container">
+
+            </table>
+        </div>
+    
+        <div id="Leaderboard" class="tabcontent">
+            <h3>Leaderboard</h3>
+            <p>leaderboard </p>
+        </div>
+
+    </div>
+
+    <div id="Compxxx" class="tabcontent">
+        <h3>Comp 447</h3>
+        <div>
+            <!-- menu within compxxx-->
+            <div class="navbar">
+                <a href="#chat" onclick="openBar(event, 'class-chat')">Chat</a>
+                <a href="#calendar" onclick="openBar(event, 'calendar')">Calendar</a>
+                <a href="#study" onclick="openBar(event, 'study')">Study</a>
+
+            </div>
+        </div>
+
+        <div id="class-chat" class="navbarcontent">Welcome to the Chat
+            <div class="chat-container">
+                <div class="container">
+                    <img src="/static/images/avatar.svg" alt="Avatar">
+                    <p>whens the midterm</p>
+                    <span class="time-right">11:00</span>
+                </div>
+
+                <div class="container darker">
+                    <img src="/static/images/avatar.svg" alt="Avatar" class="right">
+                    <p>dude it was yesterday</p>
+                    <span class="time-left">11:01</span>
+                </div>
+
+                <div class="container">
+                    <img src="/static/images/avatar.svg" alt="Avatar">
+                    <p>WHAT?! Are you serious?</p>
+                    <span class="time-right">11:02</span>
+                </div>
+
+                <div class="container darker">
+                    <img src="/static/images/avatar.svg" alt="Avatar" class="right">
+                    <p>yea bro... it was on the calendar</p>
+                    <span class="time-left">11:05</span>
+                </div>
+            </div>
+            <div class="message-input">
+                <input type="text" placeholder="Message Comp 447...">
+            </div>
+        </div>
+
+        <div id="calendar" class="navbarcontent">
+        </div>
+        <div id="study" class="navbarcontent">
+            <form>
+                <label for="fileInput">Choose a file:</label>
+                <input type="file" id="fileInput" name="fileInput" accept=".txt, .jpg, .png, .pdf">
+                <button type="button" onclick="uploadFile()">Upload</button>
+              </form>
+        </div>
+
+    </div>
+    <!-- end compxxx -->
+
+    
+</div>
+
+
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+</body>
+
+</html>
