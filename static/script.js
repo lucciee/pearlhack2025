@@ -213,8 +213,23 @@ function uploadFile() {
     .then(response => response.json())
 }
 
+function uploadNotes() {
+  // console.log("Fetched data:", data);
+  notes = document.getElementById('notesInput').value;
+  notes2 = encodeURIComponent(notes); 
+    fetch('/upload?notes=${notes2}')
+      .then(response => response.json())
+      .then(data => { 
+        container = document.getElementById('ai-summary')
+        container.innerHTML = data
+      })
+}
+
 window.onload = function () {
   displayCourses();
 };
+
+
+// console.log("aslkdjflks")
 
 
