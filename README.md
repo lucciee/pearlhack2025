@@ -1,5 +1,7 @@
 ## Fuse 
 A platform for class groupchats, study planning, peer tutoring, friendly competition, and note sharing.
+
+Demo video:
 https://github.com/user-attachments/assets/3081190f-c3c4-404c-b789-0d2b4cf89a19
 <img width="1886" height="989" alt="Screenshot 2025-10-23 195701" src="https://github.com/user-attachments/assets/be9f7169-6067-4a2d-883d-31383510a5a8" />
 <img width="1887" height="979" alt="Screenshot 2025-10-23 195731" src="https://github.com/user-attachments/assets/7c9a720e-b4de-4fb8-918d-cac044bfe4a6" />
